@@ -1,0 +1,159 @@
+---
+title: git bush 命令行 与 github
+date: 2018-03-04 01:51:26
+tags: git bush 命令行 ， github
+categories: 前端
+---
+作者 ： 黄洪涛  
+参考 ： 饥人谷
+## 命令行的总结
+
+### 哪些系统提供了命令行？
+1. windows 命令提示符 和 git bush
+2. Linux （ubuntu）终端
+3. unix （macos）终端
+
+### 目前前端技术使用命令行的框架及工具
+- - Gulp
+- - webpack
+- - SASS 
+- - node.js 
+- - vue 
+- - react
+- - angular
+- - 这就是我们不得不学习命令行的原因
+
+### 基本概念 
+* 文件夹就是    目录
+* ~ ： 用户目录  
+* / :  代表整个硬盘的意思   ， 后面出现就是分界线的意思
+* . :  表示当前目录
+* .. ： 表示父目录
+* $ : 提示可以输入命令
+
+### 常用命令使用方法
+`cd ` 进入一个目录   cd ../ 回 上一个目录   
+`pwd` 显示当前目录   
+`mkdir`  创建目录  mkdir demo-1   
+`mkdir -p`  目录路径 mkdir -p demo-1/demo-2/demo-3    如果有特殊字符   需要加引号 “demo-1/demo-2/demo-3”   
+`whoami`  用户名   ，我是谁
+
+`ls  xxx`  查看路径   
+`ls`  查看当前目录的所有没有隐藏的文件   
+`ls -a` 查看所有文件   
+`ls -l` 查看更多信息   
+`ls -al` 查看所有文件更多信息   
+
+`echo  "hello" > 1.txt`  重定向至1.txt    hello     会创建文件   
+`echo  "0.0" >> 1.txt`  追加内容至       hello  0.0   
+`echo  "123" >! 1.txt`  强制重定向至（windows不支持   会创建一个！文件）    123
+
+`touch` 也可以创建文件   但是不能指定内容    会更新文件创建的时间
+
+`cp`  复制文件   
+`cp -r`  复制目录  
+
+`mv`  重命名或移动文件 
+
+`rm` 删除文件  
+`rm -rf` 强制删除目录
+
+`tree` 查看目录结构   （windows不支持）
+
+`ln-s` 建立软链接   （windows 不支持）
+
+`curl-l https://code.jquery.com/jquery-3.3.1.min.js > jq.html`    下载文件
+
+`wget -p -H -e robots=off  https://www.baidu.com/`   拷贝一个网页  （windows不支持）
+
+`df -kh` 查看磁盘占用  
+`du -sh` 当前目录大小  
+`du -h` 各文件大小  
+
+`cat` 查看文件内容
+
+## ginhub学习总结
+
+### 推荐一个详细讲解配置GitHub的网站
+[廖雪峰-git](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137396287703354d8c6c01c904c7d9ff056ae23da865a000)
+
+```
+git config --global user.name 你的英文名
+git config --global user.email 你的邮箱
+git config --global push.default matching
+git config --global core.quotepath false
+git config --global core.editor "vim"
+```
+这五句话 ， 依次运行。  不执行的话 ，你会被打爆的  。 嘿嘿嘿
+
+### 本地仓库操作命令
+1. `git init`，初始化本地仓库 .git
+2. `git status -sb`，显示当前所有文件的状态
+3. `git add` 文件路径，用来将变动加到暂存区
+4. `git commit -m` "信息"，用来正式提交变动，提交至 .git 仓库
+5. 如果有新的变动，我们只需要依次执行 `git add xxx` 和 `git commit -m 'xxx'` 两个命令即可。别看本教程废话那么多，其实就这一句有用！先 add 再 commit，行了，你学会 git 了。
+6. `git log` 查看变更历史
+
+### 本地库上传GitHub
+#### 当你在GitHub上创建一个空仓库时， 就会出现上传命令项
+```
+echo "# lll" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:HongTao-Huang/lll.git
+git push -u origin master
+```
+* 推荐使用ssh 方式的git仓库链接
+#### 仓库变更
+```
+git add.
+git commit -m ""
+git pull    //   先执行，比较安全
+git push
+```
+### 下载仓库
+`git clone git@github.com:xxxx，下载仓库`
+
+### 其他一些有用的命令
+`git remote add origin git@github.com:xxxxxxx.git` 将本地仓库与远程仓库关联
+`git remote set-url origin git@github.com:xxxxx.git` 上一步手抖了，可以用这个命令来挽回
+`git branch` 新建分支
+`git merge` 合并分支
+`git stash` 通灵术
+`git stash pop` 反转通灵术
+`git revert` 后悔了
+`git reset` 另一种后悔了
+`git diff` 查看详细变化
+
+## 最后最重要的我觉得最棒的就是可以把GitHub命令缩写的一个功能 
+
+###  ~/.bashrc  功能很强大的一个功能
+1. 首先 `touch ~/.bashrc` 创建一下这个文件
+2. `start ~/.bashrc` 选用编辑器编辑这个文件，内容为 `echo 'Hi'`
+3. 你也可以用命令行编辑文件 `echo "echo 'hi'" >> ~/.bashrc`
+4. 关闭退出 Git Bash，然后打开 Git Bash，是不是看到了 Hi，这说明每次进入 Git Bash，就会优先运行 ~/.bashrc 里面的命令
+5. 重新编辑 ~/.bashrc，内容改为 `cd ~/Desktop`，重启 Git Bash，有没有发现默认就进入桌面目录了？
+你可以用 ~/.bashrc 在进入 Git Bash 前执行任何命令，十分方便。
+
+### alias 
+在 ~/.bashrc 里新增一行 `alias f="echo 'frank is awesome'"`，等于号两边不能有空格，你最好一个字都不要错。
+运行 `source ~/.bashrc`，作用是执行 ~/.bashrc
+运行 f，就会看到 `frank is awesome`
+也就是说，现在 f 就是 echo 'frank is awesome' 的缩写了，利用这个技巧，我们可以把很多常见的命令缩写一下，比如
+```
+cd d/ttman/Desktop
+alias la='ls -a'
+alias ll='ls -l'
+alias gss='git status -sb'
+alias ga='git add'
+alias ga.='git add .'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias hg='hexo generate'
+alias hd='hexo deploy'
+alias hs='hexo server'
+alias hn='hexo new'
+
+export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass"
+```
