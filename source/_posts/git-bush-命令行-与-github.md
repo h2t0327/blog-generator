@@ -1,5 +1,5 @@
 ---
-title: git bush 命令行 与 github
+title: git-bush命令行与github
 date: 2018-03-04 01:51:26
 tags: git bush 命令行 ， github
 categories: 前端
