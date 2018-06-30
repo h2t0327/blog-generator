@@ -5,6 +5,8 @@ tags: W3C MDN HTML Tag 空Tag 可替换Tag
 categories: Embedded
 ---
 
+# Ubuntu17.10 友善6410 PC端QT开发环境搭建
+
 ## 下载QT
 
 [QT各版本官方下载大全](http://download.qt.io/archive/qt/)  

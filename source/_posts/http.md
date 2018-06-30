@@ -1,9 +1,11 @@
 ---
-title: http 
+title: HTTP
 date: 2018-03-11 23:45:50
 tags: URL  请求  响应  URL  http协议 curl
 categories: 前端
 ---
+
+# HTTP
 
 ## URL
 `URL` 俗称网址 ， 也就是统一资源`定位`符/`定位`地址

@@ -5,6 +5,8 @@ tags: call apply bind
 categories: 前端
 ---
 
+# call,apply,bind用法
+
 ##  call
 ```
 var obj = {

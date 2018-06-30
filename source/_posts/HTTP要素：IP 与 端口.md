@@ -4,6 +4,9 @@ date: 2018-03-13 23:00:00
 tags: TCP IP UDP HTTP 端口 内网  外网
 categories: 前端
 ---
+
+# HTTP访问要素:IP与端口
+
 ## HTTP
 * HTTP 协议的底层其实是由 TCP 协议和 IP 协议（简称 TCP/IP）构建的。
 
