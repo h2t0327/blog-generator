@@ -1,8 +1,12 @@
 ---
 title: Js冒泡排序&选择排序
 date: 2018-05-03 23:00:00
-tags: 基础排序冒泡法
-categories: 前端
+categories:
+  - 'js'
+  - '排序'
+tags:
+  - 'js'
+  - '排序'
 ---
 
 # Js冒泡排序&选择排序

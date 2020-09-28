@@ -1,11 +1,13 @@
 ---
 title: node.js Server
 date: 2018-03-14 00:00:00
-tags: Server client 请求 响应
-categories: 前端
+categories:
+  - 'node'
+  - 'server'
+tags:
+  - 'node'
+  - 'server'
 ---
-
-# node.js Server
 
 ## 脚本建Server
 
@@ -18,7 +20,7 @@ categories: 前端
 - 用bush命令操作，进个自己认为安全好用的目录
 - 创建文件 `touch server.js` ,将以下内容加入：
 
-````
+````javascript
 
 var http = require('http')
 var fs = require('fs')
@@ -98,7 +100,7 @@ console.log('监听 ' + port + ' 成功\n请用在空中转体720度然后用电
 ![](http://ww1.sinaimg.cn/large/006WOZytgy1fpbnj1w33ej30bt03074h.jpg)
 
 ### 我们需要知道的
-```
+```javascript
 response.setHeader('Content-Type', 'text/css; charset=utf-8')  //设置响应内容的类型，以及响应内容的编码方式，返回                                                                  //css文件 
 response.setHeader('Content-Type', 'text/javascript; charset=utf-8') //返回js文件
 response.setHeader('Content-Type', 'text/html; charset=utf-8')     //返回html文件
@@ -106,3 +108,4 @@ response.setHeader('Content-Type', 'text/html; charset=utf-8')     //返回html�
 response.write('Hi')          //响应内容
 response.end()             //响应结束
 ```
+

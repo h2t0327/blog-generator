@@ -1,24 +1,27 @@
 ---
 title: Flex布局
 date: 2018-05-23 23:00:00
-tags: flex
-categories: 前端
+categories:
+  - 'css'
+  - 'flex'
+tags:
+  - 'css'
+  - 'flex'
 ---
-
-# Flex布局
 
 [阮一峰-Flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)  
 [阮一峰-Flex布局实例教程](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
+
 ## Flex布局
 
 ### 块级元素
-```
+```css
 .box{
   display: flex;
 }
 ```
 ### 行内元素
-```
+```css
 .box{
   display: inline-flex;
 }
@@ -32,7 +35,7 @@ categories: 前端
 
 ### flex-direction属性
 - 决定主轴的方向 或  交叉轴的方向
-```
+```css
 	.box{
    		 // flex-direction: row;  从左至右
          // flex-direction: row-reverse;  从右至左
@@ -43,7 +46,7 @@ categories: 前端
 
 ### flex-wrap属性
 - 决定如何换行
-```
+```css
 	.box{
    	  //flex-wrap: nowrap;     不换行
          //flex-wrap: wrap;    换行，第一行在上方（从上往下）
@@ -53,7 +56,7 @@ categories: 前端
 
 ### flex-flow属性
 - `flex-flow`属性是`flex-direction`属性和`flex-wrap`属性的简写形式，默认值为`row nowrap`。
-```
+```css
     .box {
      	// flex-flow: <flex-direction> || <flex-wrap>;
         // flex-flow: row nowrap;
@@ -63,7 +66,7 @@ categories: 前端
 ### justify-content属性
 - 决定了项目的水平对齐方式
 - 与 主轴的方向有关，以下假设为`flex-direction: row;`
-```
+```css
 .box {
   // justify-content: flex-start;   左对齐
   // justify-content: flex-end;    右对齐
@@ -76,7 +79,7 @@ categories: 前端
 ### align-items属性
 - 决定了项目的垂直对齐方式
 - 与交叉轴的方向有关，以下假设为`flex-direction: column;`
-```
+```css
 // align-items: flex-start 上对齐
 // align-items: flex-end：下对齐
 // align-items: center：居中对齐
@@ -85,7 +88,7 @@ categories: 前端
 ```
 ### align-content属性
 - align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
-```
+```css
 .box {
  // align-content: flex-start;  与交叉轴的起点对齐。
  // align-content: flex-end;    与交叉轴的终点对齐。
@@ -96,8 +99,8 @@ categories: 前端
 }
 ```
 
-## 项目的属性
-```
+## c项目的属性
+```css
 order : 0123...（优先级设置） 项目的排列顺序
 flex-grow：0123...（默认为0,不放大） 项目的放大比例，自动按比列分配容器空间
 flex-shrink：0123...（默认为1,默认空间不足时可等比缩放，为0不缩）

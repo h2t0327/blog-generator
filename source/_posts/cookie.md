@@ -1,8 +1,11 @@
 ---
 title: 登陆注册与cookie
 date: 2018-06-27 23:00:00
-tags: 闭包
-categories: 前端
+categories:
+  - 'js'
+  - 'cookie'	
+tags:
+  - 'cookie'
 ---
 
 # 登陆注册与cookie

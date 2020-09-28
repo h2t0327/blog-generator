@@ -1,14 +1,19 @@
 ---
 title: call,apply,bind用法
 date: 2018-05-28 23:00:00
-tags: call apply bind
-categories: 前端
+categories:
+  - 'js'
+  - ''
+tags:
+  - 'call'
+  - 'apply'
+  - 'bind'
 ---
 
 # call,apply,bind用法
 
 ##  call
-```
+```javascript
 var obj = {
    name: 'hht',
    age : 1
@@ -29,7 +34,7 @@ f.call(obj,'mmd',18);
 - call 第二个以及之后的参数就是我们的arguments的值
 
 ## apply
-```
+```javascript
 var obj = {
    name: 'hht',
    age : 1
@@ -49,7 +54,7 @@ f.apply(obj,{0: 'mmd', 1: 18, length: 2});
 - call()方法的作用和 apply() 方法类似，只有一个区别，就是 call()方法接受的是若干个参数的列表，而apply()方法接受的是一个包含多个参数的数组, 或伪数组。
 
 ## bind
-```
+```javascript
 var obj = {
    name: 'hht',
    age : 1

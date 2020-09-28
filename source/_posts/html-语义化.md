@@ -1,8 +1,11 @@
 ---
 title: HTML语义化
 date: 2018-03-18 15:20:00
-tags: W3C MDN HTML Tag 空Tag 可替换Tag
-categories: 前端
+categories:
+  - 'HTML'
+  - ''
+tags:
+  - 'http'
 ---
 # HTML-语义化-(iframe-a-form的使用)
 

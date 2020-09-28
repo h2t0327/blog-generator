@@ -1,8 +1,12 @@
 ---
 title: HTML
 date: 2018-03-14 23:00:00
-tags: W3C MDN HTML Tag 空Tag 可替换Tag
-categories: 前端
+categories:
+  - 'HTML'
+  - ''
+tags:
+  - 'HTML'
+copyright: true
 ---
 
 # HTML

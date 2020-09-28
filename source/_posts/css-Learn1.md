@@ -1,8 +1,10 @@
 ---
 title: CSS
 date: 2018-04-10 11:00:00
-tags: css布局 清除浮动 引入css的方法  推荐工具
-categories: 前端
+categories:
+  - 'css'
+tags:
+  - 'css'
 ---
 
 # CSS
@@ -48,15 +50,16 @@ categories: 前端
     ```
     <link rel="stylesheet" type="text/css" href="a.css">
     ```
-    
+   
 4. import 
 	该方法是在一个css文件中引入另一个css文件，语法为
     ```
     @import url("b.css")
     ```
-    
+  
+
  	（以下观点属个人理解）
-   
+
 ## 水平布局
 
 ### 导航栏
@@ -124,7 +127,7 @@ div{
 
 ### 个人理解 
  整个网页就是在做一个垂直布局 ， 而水平布局就是在整体的纵向垂直布局上做一块内容的横向水平布局
- 
+
 ###  各块的垂直布局
 ![2018-04-10 10-45-56 的屏幕截图.png](https://i.loli.net/2018/04/10/5acc25c1a9055.png)
 

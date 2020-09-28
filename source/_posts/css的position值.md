@@ -1,8 +1,12 @@
 ---
 title: css的position值
 date: 2018-04-27 23:00:00
-tags: position
-categories: 前端
+categories:
+  - 'css'
+  - 'position'
+tags:
+  - 'css'
+  - 'position'
 ---
 
 # css的position值

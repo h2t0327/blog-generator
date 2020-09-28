@@ -1,8 +1,11 @@
 ---
 title: 深入理解jQuery
 date: 2018-06-30 23:00:00
-tags: 基础排序
-categories: 前端
+categories:
+  - 'js'
+  - 'jq'
+tags:
+  - 'jq'
 ---
 
 # 深入理解jQuery
@@ -88,12 +91,12 @@ nodes.addClass = function(classs) {
       }
   }
   return nodes;
-  ```
-  
+```
+
   - 最后就是给这个要返回的对象添加API啦
   - 真正的jQuery的API都是封装在jQuery.prototype中，所有的jQuery对象都共用这些API
   - 这里的nodes就与两个方法之间产生了闭包， 保护了nodes的私有化
- 
+
 ```
 window.$ = jQuery
 

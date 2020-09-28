@@ -1,8 +1,10 @@
 ---
 title: CSS-元素宽高是由什么决定的
 date: 2018-04-13 20:00:00
-tags: 行内元素  块级元素  span div
-categories: 前端
+categories:
+  - 'css'
+tags:
+  - 'css'
 ---
 
 # CSS-元素宽高是由什么决定的
